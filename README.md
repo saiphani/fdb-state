@@ -29,5 +29,4 @@ fdb.store('key');
 fdb.store('key', value, true); 
 
 ### Search data
-fdb.store('key').search({key: value});
-fdb.search({key: value});
+fdb.store('key').search({key: value}, limit); //By default limit will be 1
