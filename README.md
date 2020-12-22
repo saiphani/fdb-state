@@ -30,4 +30,4 @@ fdb.store('key', value, true);
 
 ### Search data
 fdb.store('key').search({key: value});
-fdb.search({key: value>});
+fdb.search({key: value});
