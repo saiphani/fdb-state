@@ -1,7 +1,7 @@
 # fdb
 
 ### Beat version is live now
-### This is a state manger and much more.
+### This is a state manager and much more.
 
 
 ## Setup
