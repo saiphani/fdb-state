@@ -19,15 +19,15 @@ fdb.config({storeName: 'app'});
 ## Usage
 
 ### To store a avlue in virtual DB
-fdb.store('key', <value>);
+fdb.store('key', value);
 
 ### To retrive a value
 fdb.store('key');
 
 ### Sync with localstorage
 #### This needs to be used only one time for a key. Next time it will do the sync automatically
-fdb.store('key', <value>, true); 
+fdb.store('key', value, true); 
 
 ### Search data
-fdb.store('key').search({key: <value>});
-fdb.search({key: <value>});
+fdb.store('key').search({key: value});
+fdb.search({key: value>});
