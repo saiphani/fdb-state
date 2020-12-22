@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <script src="./fdb.js">
+    </script>
+</head>
+
+<body>
+    <div id="cnt">
+        <button onclick="getOutput()">get output</button>
+        <br />
+        <input id="input" type="text" onchange="save()" />
+        <div>Output: <span id="output"></span></div>
+    </div>
+</body>
+<script>
+    fdb.config({
+        storeName: 'app'
+    });
+    fdb.store('arr', [{id: 1, name: 'sai'}, {id: 2, name: 'phani'}], true);
+    function save() {
+        let value = document.getElementById('input').value;
+        fdb.store('sample', value, true);
+        let result = fdb.store('sample');
+        document.getElementById('output').innerText = result;
+    }
+    function getOutput(){
+        let result = fdb.store('sample');
+        document.getElementById('output').innerText = result;
+        alert(JSON.stringify(fdb.store('arr').search({id: 1})));
+    }
+</script>
+<!-- <script src="./fdb.type.js"></script> -->
+
+</html>
