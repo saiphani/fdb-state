@@ -1,6 +1,6 @@
 # fdb
 
-### Beat version is live now
+### Beta version is live now
 ### This is a state manager and much more.
 
 
